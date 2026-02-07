@@ -1,0 +1,27 @@
+name: ch09-ai
+channels:
+  - conda-forge
+  - pytorch
+  - nvidia
+dependencies:
+  - python=3.10
+  - numpy
+  - pandas
+  - scikit-learn
+  - dask
+  - distributed
+  - dask-ml
+  - joblib
+  - matplotlib
+  - ipykernel
+  - jupyterlab
+  - graphviz
+  - python-graphviz
+  - bokeh
+  - pip
+  - pip:
+      - torchinfo
+      - torchsummary
+      - torchviz
+      # dask-saturn is optional and often installed only on Saturn Cloud machines
+      # - dask-saturn

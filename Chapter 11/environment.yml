@@ -1,0 +1,20 @@
+
+name: ch11-ray-modin
+channels:
+  - conda-forge
+  - pytorch
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+      - ray
+      - "ray[tune]"
+      - "ray[train]"
+      - "ray[serve]"
+      - modin[ray]
+      - pandas
+      - numpy
+      - torch
+      - torchvision
+      - pillow
+      - requests

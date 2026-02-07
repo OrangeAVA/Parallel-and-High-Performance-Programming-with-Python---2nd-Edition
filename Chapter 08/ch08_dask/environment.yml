@@ -1,0 +1,12 @@
+name: dask-ch08
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - dask
+  - distributed
+  - pandas
+  - numpy
+  - bokeh
+  - graphviz
+  - python-graphviz

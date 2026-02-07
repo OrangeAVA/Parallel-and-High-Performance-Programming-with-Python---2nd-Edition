@@ -1,0 +1,13 @@
+numpy
+pandas
+scikit-learn
+dask[distributed]
+dask-ml
+joblib
+matplotlib
+graphviz
+torchinfo
+torchsummary
+torchviz
+# PyTorch wheels differ by OS/CUDA. See https://pytorch.org/get-started/locally/
+# Example CPU-only (Linux/mac): pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu

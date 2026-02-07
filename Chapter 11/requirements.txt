@@ -1,0 +1,11 @@
+ray
+ray[tune]
+ray[train]
+ray[serve]
+modin[ray]
+pandas
+numpy
+torch
+torchvision
+pillow
+requests
