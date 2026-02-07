@@ -1,0 +1,5 @@
+- Use provisioned concurrency / min instances to mitigate cold starts.
+- Benchmark memory/CPU for Lambda/GCF; more memory often gives more CPU.
+- Prefer event fan-out (S3/SQS, Pub/Sub) for parallel pipelines.
+- Use Spot/Preemptible for batch; design for retries.
+- In K8s, set requests/limits + HPA/VPA; enable cluster autoscaler.

@@ -1,0 +1,12 @@
+name: qc-ch16
+channels:
+  - conda-forge
+dependencies:
+  - python>=3.10
+  - pip
+  - pip:
+    - qiskit>=1.0
+    - qiskit-aer>=0.13
+    - qiskit-machine-learning>=0.7
+    - matplotlib>=3.7
+    - numpy>=1.24

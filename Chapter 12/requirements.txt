@@ -1,0 +1,6 @@
+
+pyspark==3.5.4
+pandas
+pyarrow
+dask[dataframe]
+graphframes

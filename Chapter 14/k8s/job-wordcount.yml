@@ -1,0 +1,22 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: wordcount-job
+spec:
+  template:
+    spec:
+      restartPolicy: Never
+      containers:
+      - name: wordcount
+        image: python:3.11-slim
+        command: ['python','-c']
+        args:
+        - |
+          import os
+          from collections import Counter
+          text = os.environ.get('TEXT','hello world hello kubernetes')
+          print('WORD COUNTS:', dict(Counter(text.split())))
+        env:
+        - name: TEXT
+          value: 'serverless vs kubernetes kubernetes autoscaling serverless'
+  backoffLimit: 0

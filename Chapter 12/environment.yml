@@ -1,0 +1,14 @@
+
+name: pyspark-ch12
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - openjdk=21
+  - pip
+  - pip:
+      - pyspark==3.5.4
+      - pandas
+      - pyarrow
+      - dask[dataframe]
+      - graphframes

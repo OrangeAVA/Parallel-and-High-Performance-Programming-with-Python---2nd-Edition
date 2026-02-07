@@ -1,0 +1,11 @@
+name: ch15-fpga
+channels:
+  - conda-forge
+dependencies:
+  - python>=3.10
+  - numpy
+  - pip
+  - pocl  # optional CPU OpenCL runtime (platform dependent)
+  - pip:
+      - pyopencl
+      - myhdl
